@@ -1,0 +1,34 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "no-undef": [0],
+        "no-console": [0],
+        "no-unused-vars": [1],
+        "react/prop-types": [0],
+        "flowtype/space-after-type-colon": [2, "always"],
+        "flowtype/require-valid-file-annotation": [2, "always"]
+    },
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "ecmaFeatures": {
+        "jsx": true,
+        "experimentalObjectRestSpread": true,
+        "modules": true
+    },
+    "plugins": [
+        "react",
+        "flowtype"
+    ]
+}

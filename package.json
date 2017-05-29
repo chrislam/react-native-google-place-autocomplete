@@ -5,4 +5,9 @@
   "main": "index.js",
   "author": "Chris Lam <chris.lam@gladeye.com>",
   "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^7.0.1"
+  }
 }
