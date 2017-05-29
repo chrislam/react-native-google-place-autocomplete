@@ -14,5 +14,8 @@
   "peerDependencies": {
     "react": "16.0.0-alpha.6",
     "react-native": "^0.44.2"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
   }
 }
