@@ -4,6 +4,7 @@ import {
     View
 } from 'react-native';
 import AutocompleteInput from './lib/AutocompleteInput';
+import Predictions from './lib/Predictions';
 
 class GooglePlaceAutocomplete extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class GooglePlaceAutocomplete extends Component {
         return (
             <View style={style.container}>
                 <AutocompleteInput />
+                <Predictions />
             </View>
         );
     }
