@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import AutocompleteInput from './lib/AutocompleteInput';
-import Predictions from './lib/Predictions';
-import Prediction from './lib/Prediction';
+import {
+    View
+} from 'react-native';
 
 class GooglePlaceAutocomplete extends Component {
     constructor(props) {
@@ -9,12 +9,8 @@ class GooglePlaceAutocomplete extends Component {
     }
 
     render() {
-        return null;
+        return <View></View>;
     }
 }
-
-export AutocompleteInput;
-export Predictions;
-export Prediction;
 
 export default GooglePlaceAutocomplete;
