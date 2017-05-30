@@ -101,7 +101,7 @@ class GooglePlaceAutocomplete extends Component {
             });
         } else {
             if (this.state.predictions && this.state.predictions.length > 0) {
-                this._predictions(null);
+                this._predictions([]);
             }
         }
     }
