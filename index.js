@@ -54,7 +54,7 @@ class GooglePlaceAutocomplete extends Component {
 
     render() {
         return (
-            <View style={style.container}>
+            <View style={[style.container, this.props.style]}>
                 <AutocompleteInput
                     value={this.state.value}
                     onChangeText={this._handleChangeText}
