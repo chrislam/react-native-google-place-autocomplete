@@ -6,6 +6,7 @@ import {
 import {
     func,
     number,
+    object,
     string,
 } from 'prop-types';
 import axios, { CancelToken } from 'axios';
@@ -17,6 +18,7 @@ class GooglePlaceAutocomplete extends Component {
         googleAPIKey: string,
         value: string,
         debounce: number,
+        style: object,
         onChangeText: func,
         onPredictions: func,
         onResult: func
