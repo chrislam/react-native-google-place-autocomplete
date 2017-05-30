@@ -3,11 +3,25 @@ import {
     StyleSheet,
     View
 } from 'react-native';
+import {
+    func,
+    number,
+    string,
+} from 'prop-types';
 import axios, { CancelToken } from 'axios';
 import AutocompleteInput from './lib/AutocompleteInput';
 import Predictions from './lib/Predictions';
 
 class GooglePlaceAutocomplete extends Component {
+    static propTypes = {
+        googleAPIKey: string,
+        value: string,
+        debounce: number,
+        onChangeText: func,
+        onPredictions: func,
+        onResult: func
+    }
+
     static defaultProps = {
         debounce: 250
     }
