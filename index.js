@@ -7,6 +7,10 @@ import AutocompleteInput from './lib/AutocompleteInput';
 import Predictions from './lib/Predictions';
 
 class GooglePlaceAutocomplete extends Component {
+    static defaultProps = {
+        debounce: 250
+    }
+
     constructor(props) {
         super(props);
 
@@ -32,10 +36,32 @@ class GooglePlaceAutocomplete extends Component {
     render() {
         return (
             <View style={style.container}>
-                <AutocompleteInput />
-                <Predictions />
+                <AutocompleteInput
+                    value={this.state.value}
+                    onChangeText={this._handleChangeText}
+                    debounce={this.props.debounce}
+                    onChangeTextSettle={this._handleChangeTextSettle} />
+                <Predictions
+                    predictions={this.state.predictions}
+                    onPressPrediction={this._handlePressPrediction} />
             </View>
         );
+    }
+
+    _handleChangeText = (value) => {
+        this.props.onChangeText(value);
+        this.setState({
+            value
+        });
+    }
+
+    _handleChangeTextSettle = () => {
+        // Get predictions
+        this.props.onPredictions();
+    }
+
+    _handlePressPrediction = (prediction) => {
+        this.props.onPress(prediction);
     }
 }
 
