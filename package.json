@@ -1,6 +1,6 @@
 {
   "name": "react-native-google-place-autocomplete",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "React Native components to utilise the Place Autocomplete service of the Google Places API",
   "main": "index.js",
   "author": "Chris Lam <chris.lam@gladeye.com>",
