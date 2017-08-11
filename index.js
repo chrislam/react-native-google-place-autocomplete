@@ -19,6 +19,7 @@ class GooglePlaceAutocomplete extends Component {
         value: string,
         debounce: number,
         style: object,
+        placeholder: string,
         onChangeText: func,
         onPredictions: func,
         onResult: func
@@ -59,6 +60,7 @@ class GooglePlaceAutocomplete extends Component {
             <View style={[style.container, this.props.style]}>
                 <AutocompleteInput
                     value={this.state.value}
+                    placeholder={this.props.placeholder}
                     onChangeText={this._handleChangeText}
                     debounce={this.props.debounce}
                     onChangeTextSettle={this._handleChangeTextSettle} />
