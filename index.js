@@ -131,6 +131,9 @@ class GooglePlaceAutocomplete extends Component {
 
                     // Fire event
                     if (this.props.onResult) {
+                        this.setState({
+                          predictions:[],
+                        });
                         this.props.onResult(result);
                     }
                 } else {
