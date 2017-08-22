@@ -68,6 +68,7 @@ class GooglePlaceAutocomplete extends Component {
                     containerStyle={this.props.containerStyle}
                     placeholder={this.props.placeholder}
                     onChangeText={this._handleChangeText}
+                    selectionColor={this.props.selectionColor}
                     debounce={this.props.debounce}
                     onChangeTextSettle={this._handleChangeTextSettle} />
                 <Predictions
