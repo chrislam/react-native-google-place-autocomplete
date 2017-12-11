@@ -23,6 +23,8 @@ class GooglePlaceAutocomplete extends Component {
         inputStyle: object,
         predictionsStyle: object,
         placeholder: string,
+        placeholderTextColor: string,
+        underlineColorAndroid: string,
         onChangeText: func,
         onPredictions: func,
         onResult: func
@@ -71,6 +73,8 @@ class GooglePlaceAutocomplete extends Component {
                     placeholder={this.props.placeholder}
                     onChangeText={this._handleChangeText}
                     selectionColor={this.props.selectionColor}
+                    underlineColorAndroid={this.props.underlineColorAndroid}
+                    placeholderTextColor={this.props.placeholderTextColor}
                     debounce={this.props.debounce}
                     onChangeTextSettle={this._handleChangeTextSettle} />
                 <Predictions
